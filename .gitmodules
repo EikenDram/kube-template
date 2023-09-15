@@ -1,0 +1,3 @@
+[submodule "src/WebUI/src/common"]
+	path = src/WebUI/src/common
+	url = https://github.com/EikenDram/kube-common-vuetify
