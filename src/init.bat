@@ -1,5 +1,3 @@
-dotnet new sln --name NameApp
-
 dotnet sln add Domain/Domain.csproj
 dotnet sln add Application/Application.csproj
 dotnet sln add Infrastructure/Infrastructure.csproj

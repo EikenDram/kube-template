@@ -173,6 +173,11 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.48.0.tgz#642633964e217905436033a2bd08bf322849b7fb"
   integrity sha512-ZSjtmelB7IJfWD2Fvb7+Z+ChTIKWq6kjda95fLcQKNS5aheVHn4IkfgRQE3sIIzTcSLwLcLZUD9UBt+V7+h+Pw==
 
+"@fortawesome/fontawesome-free@^6.4.2":
+  version "6.4.2"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-free/-/fontawesome-free-6.4.2.tgz#36b6a9cb5ffbecdf89815c94d0c0ffa489ac5ecb"
+  integrity sha512-m5cPn3e2+FDCOgi1mz0RexTUvvQibBebOUlUlW0+YrMjDTPkiJ6VTKukA1GRsvRw+12KyJndNjj0O4AgTxm2Pg==
+
 "@humanwhocodes/config-array@^0.11.10":
   version "0.11.11"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.11.tgz#88a04c570dbbc7dd943e4712429c3df09bc32844"
@@ -191,6 +196,27 @@
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-1.2.1.tgz#b520529ec21d8e5945a1851dfd1c32e94e39ff45"
   integrity sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==
+
+"@intlify/core-base@9.4.1":
+  version "9.4.1"
+  resolved "https://registry.yarnpkg.com/@intlify/core-base/-/core-base-9.4.1.tgz#5ab9b624a34af2299a9b45aa331b6516c169b8b5"
+  integrity sha512-WIwx+elsZbxSMxRG5+LC+utRohFvmZMoDevfKOfnYMLbpCjCSavqTfHJAtfsY6ruowzqXeKkeLhRHbYbjoJx5g==
+  dependencies:
+    "@intlify/message-compiler" "9.4.1"
+    "@intlify/shared" "9.4.1"
+
+"@intlify/message-compiler@9.4.1":
+  version "9.4.1"
+  resolved "https://registry.yarnpkg.com/@intlify/message-compiler/-/message-compiler-9.4.1.tgz#aa00629a455e23cece3464293834a02994b4fb04"
+  integrity sha512-aN2N+dUx320108QhH51Ycd2LEpZ+NKbzyQ2kjjhqMcxhHdxtOnkgdx+MDBhOy/CObwBmhC3Nygzc6hNlfKvPNw==
+  dependencies:
+    "@intlify/shared" "9.4.1"
+    source-map-js "^1.0.2"
+
+"@intlify/shared@9.4.1":
+  version "9.4.1"
+  resolved "https://registry.yarnpkg.com/@intlify/shared/-/shared-9.4.1.tgz#bd0d221aaac476b6778a10ddcd0472f812c64e27"
+  integrity sha512-A51elBmZWf1FS80inf/32diO9DeXoqg9GR9aUDHFcfHoNDuT46Q+fpPOdj8jiJnSHSBh8E1E+6qWRhAZXdK3Ng==
 
 "@jridgewell/sourcemap-codec@^1.4.15":
   version "1.4.15"
@@ -541,6 +567,11 @@ balanced-match@^1.0.0:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
   integrity sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==
+
+base64-js@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.5.1.tgz#1b1b440160a5bf7ad40b650f095963481903930a"
+  integrity sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==
 
 binary-extensions@^2.0.0:
   version "2.2.0"
@@ -1058,6 +1089,11 @@ isexe@^2.0.0:
   resolved "https://registry.yarnpkg.com/isexe/-/isexe-2.0.0.tgz#e8fbf374dc556ff8947a10dcb0572d633f2cfa10"
   integrity sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==
 
+js-sha256@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/js-sha256/-/js-sha256-0.9.0.tgz#0b89ac166583e91ef9123644bd3c5334ce9d0966"
+  integrity sha512-sga3MHh9sgQN2+pJ9VYZ+1LPwXOxuBJBA5nrR5/ofPfuiJBE2hnjsaN8se8JznOmGLN2p49Pe5U/ttafcs/apA==
+
 js-yaml@^4.1.0:
   version "4.1.0"
   resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-4.1.0.tgz#c1fb65f8f5017901cdd2c951864ba18458a10602"
@@ -1079,6 +1115,14 @@ json-stable-stringify-without-jsonify@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz#9db7b59496ad3f3cfef30a75142d2d930ad72651"
   integrity sha512-Bdboy+l7tA3OGW6FjyFHWkP5LuByj1Tk33Ljyq0axyzdk9//JSi2u3fP1QSmd1KNwq6VOKYGlAu87CisVir6Pw==
+
+keycloak-js@^22.0.3:
+  version "22.0.3"
+  resolved "https://registry.yarnpkg.com/keycloak-js/-/keycloak-js-22.0.3.tgz#c3f9d7ad415d3cbd8f5fa01c5c8c1aedaca58ba3"
+  integrity sha512-QV96sDngWMlJ8Mq5l+A0BNuzZqJT+d8UM9vvGsPXFT+TDfPjXuFjtrpHH26X6YMY3JaCvH2mH9PXb3DGvEkuOw==
+  dependencies:
+    base64-js "^1.5.1"
+    js-sha256 "^0.9.0"
 
 keyv@^4.5.3:
   version "4.5.3"
@@ -1553,6 +1597,15 @@ vue-eslint-parser@^9.1.1, vue-eslint-parser@^9.3.1:
     esquery "^1.4.0"
     lodash "^4.17.21"
     semver "^7.3.6"
+
+vue-i18n@^9.4.1:
+  version "9.4.1"
+  resolved "https://registry.yarnpkg.com/vue-i18n/-/vue-i18n-9.4.1.tgz#c7402662fe9b40b17798afffa9d8bfa4734dd7f5"
+  integrity sha512-vnQyYE9LBuNOqPpETIcCaGnAyLEqfeIvDcyZ9T+WBCWFTqWw1J8FuF1jfeDwpHBi5JKgAwgXyq1mt8jp/x/GPA==
+  dependencies:
+    "@intlify/core-base" "9.4.1"
+    "@intlify/shared" "9.4.1"
+    "@vue/devtools-api" "^6.5.0"
 
 vue-router@^4.0.0:
   version "4.2.4"

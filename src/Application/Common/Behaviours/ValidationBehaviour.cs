@@ -1,5 +1,5 @@
 using FluentValidation;
-using ValidationException = Shared.Application.Exceptions.ValidationException;
+using ValidationException = Common.Application.Exceptions.ValidationException;
 
 namespace Application.Common.Behaviours;
 

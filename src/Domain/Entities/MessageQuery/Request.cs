@@ -15,7 +15,7 @@ public partial class Request : AuditableEntity
     /// <summary>
     /// Id of user making request
     /// </summary>
-    public long IdUser { get; set; }
+    public string IdUser { get; set; }
 
     /// <summary>
     /// Id of request type
@@ -58,11 +58,6 @@ public partial class Request : AuditableEntity
     public string? Message { get; set; }
 
     /// <summary>
-    /// Navigation to user
-    /// </summary>
-    public virtual User IdUserNavigation { get; set; } = null!;
-
-    /// <summary>
     /// Navigation to request type
     /// </summary>
     public virtual RequestType IdTypeNavigation { get; set; } = null!;
@@ -76,16 +71,11 @@ public partial class Request : AuditableEntity
     #region AUDIT
     public override int AuditIdTarget => (int)eAuditTarget.MessageQueryRequest;
 
-    public override long? AuditTargetId => this.IdRequest;
+    public override long? AuditTargetId => IdRequest;
 
-    public override string AuditTargetName => this.IdType switch
+    public override string AuditTargetName => IdType switch
     {
         eRequestType.TableExportAudit => Messages.RequestAuditExport,
-        eRequestType.RScript => Messages.RequestRScript,
-
-#warning SAMPLE
-        eRequestType.TableExportSample => Messages.RequestSampleExport,
-
         _ => String.Empty
     };
     #endregion
